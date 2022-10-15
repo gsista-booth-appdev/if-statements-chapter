@@ -8,19 +8,20 @@
 
 p "Please choose rock, paper, or scissors:"
 
-player_choice = gets
+player_choice = gets.chomp
 
-player_choice = player_choice.chomp
-
-p "The computer played scissors!"
+# player_choice = player_choice.chomp
 
 if player_choice == "rock"
   p "You played " + player_choice + "!"
+  p "The computer played scissors!"
   p "You won!"
 elsif player_choice == "paper"
   p "You played " + player_choice + "!"
+  p "The computer played scissors!"
   p "You lost!"
 else
   p "You played " + player_choice + "!"
+  p "The computer played scissors!"
   p "You tied!"
 end
